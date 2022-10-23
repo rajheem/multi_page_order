@@ -6,7 +6,6 @@ function DisplayOrder({prevStep, formData, setFormData,formFields, setFormFields
         <h1>Your Order Information </h1>
       <div className="card" >
         <div className="card-body">
-
           <h5 className="card-title">{formData.firstName} {formData.lastName}</h5>
           <h6 className="card-subtitle mb-2 text-muted">{formData.branches}</h6>
           <p className="card-text">Orders: {formFields.map((n,index)=>{

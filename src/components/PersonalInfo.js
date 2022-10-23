@@ -1,15 +1,11 @@
 import React, {useState} from "react";
-import validator from "validator";
 
 function PersonalInfo({ formData, setFormData, nextStep }) {
-    //creating error state for validation
 
-    // after form submit validating the form data using validator
     const submitFormData = (e) => {
-
             nextStep();
-
     };
+
   return (
     <div >
         <div >

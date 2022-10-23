@@ -3,9 +3,7 @@ import React from "react";
 
 function OrderInfo({nextStep, prevStep, formData, setFormData, formFields, setFormFields }) {
     const submitFormData = (e) => {
-
         nextStep();
-
     };
 
     const handleFormChange = (event, index) => {
@@ -14,11 +12,6 @@ function OrderInfo({nextStep, prevStep, formData, setFormData, formFields, setFo
         setFormFields(data);
     }
 
-    const submit = (e) => {
-        e.preventDefault();
-        let i=document.getElementById("form")
-        console.log(i)
-    }
 
     const addFields = () => {
         let object = {
@@ -33,7 +26,6 @@ function OrderInfo({nextStep, prevStep, formData, setFormData, formFields, setFo
         let data = [...formFields];
         data.splice(index, 1)
         setFormFields(data)
-
     }
 
     return (

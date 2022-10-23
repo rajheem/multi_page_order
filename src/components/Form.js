@@ -19,12 +19,12 @@ function Form({img1}) {
 
 
 
-  // function for going to next step by increasing step state by 1
+
   const nextStep = () => {
     setstep(step + 1);
   };
 
-  // function for going to previous step by decreasing step state by 1
+
   const prevStep = () => {
     setstep(step - 1);
   };
@@ -63,9 +63,7 @@ function Form({img1}) {
     }
   }
 
-    function handleSubmit2() {
-      setPage(page + 1);
-    }
+
 
     return (
         <div className="App">
@@ -75,7 +73,6 @@ function Form({img1}) {
           <div><img src={img1}/></div>
 
             {conditionalComponent()}
-
 
         </div>
         </div>
